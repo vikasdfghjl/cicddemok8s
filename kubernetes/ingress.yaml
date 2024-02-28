@@ -1,0 +1,16 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: cicddemo-ingress  
+spec:
+  rules:
+    - host: k8s-demo.info
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: cicddemo-svc
+                port:
+                  number: 4001
