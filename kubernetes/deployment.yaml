@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: cicddemo
-        image: vikasdfghjl/cicddemo:30
+        image: vikasdfghjl/python-weather-app:47
         ports:
         - containerPort: 4000
